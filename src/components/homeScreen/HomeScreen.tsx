@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './HomeScreen.module.scss';
-import { fnPlayStoreUrl, fnWebsiteUrl } from '../../constants';
+import { fnPlayStoreUrl } from '../../constants';
 
 const HomeScreen: React.FC = () => {
   return (
@@ -14,9 +14,6 @@ const HomeScreen: React.FC = () => {
             <div className={`${styles.actionsContainer}`}>
               <a href={fnPlayStoreUrl} target="_blank" rel="noreferrer">
                 <img className={`${styles.playStoreImg}`} src="/assets/images/playstore.png" alt="fnLogo" />
-              </a>
-              <a href={fnWebsiteUrl} target="_blank" rel="noreferrer">
-                <div className={`${styles.text}`}>Website</div>
               </a>
             </div>
           </div>
