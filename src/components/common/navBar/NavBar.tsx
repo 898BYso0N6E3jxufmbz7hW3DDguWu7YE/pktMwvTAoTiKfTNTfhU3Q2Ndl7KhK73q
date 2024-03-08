@@ -43,6 +43,17 @@ const NavBar: React.FC = () => {
                 Contact Us
               </HashLink>
             </div>
+            <div className={`${styles.navElement}`}>
+              <HashLink
+                smooth
+                to={'/about'}
+                onClick={() => {
+                  setIsShowSideNavbar(false);
+                }}
+              >
+                About Us
+              </HashLink>
+            </div>
           </div>
         </div>
       </div>
