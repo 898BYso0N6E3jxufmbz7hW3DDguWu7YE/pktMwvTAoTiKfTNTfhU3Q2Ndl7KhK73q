@@ -2,9 +2,7 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import './styles/styles.scss';
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
-import HomePage from './pages/home';
-import ContactPage from './pages/contact';
-import AboutPage from './pages/about';
+import { AboutPage, ContactPage, HomePage, PrivacyPage, TermsPage } from './pages';
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 
@@ -12,6 +10,14 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <HomePage />,
+  },
+  {
+    path: '/terms-and-conditions',
+    element: <TermsPage />,
+  },
+  {
+    path: '/privacy-policy',
+    element: <PrivacyPage />,
   },
   {
     path: '/about',

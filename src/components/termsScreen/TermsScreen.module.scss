@@ -1,0 +1,17 @@
+@import '../../styles/base/_settings.scss';
+
+//mobile
+.container {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.contentContainer {
+  max-width: 1080px;
+}
